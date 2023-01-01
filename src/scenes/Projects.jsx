@@ -101,7 +101,7 @@ const Projects = () => {
             link="https://github.com/JalonLewis/FLASHCARD-O-MATIC"
           />
           <Project
-            title="WeLoveMovies"
+            title="We Love Movies"
             projectDescription="Created a database and built out specific routes so that users can gain access to data about movies, theaters, and reviews.
           Node.js, Express, PostgreSQL, and Knex.js were utilized."
             link="https://github.com/JalonLewis/WeLoveMovies"
