@@ -10,7 +10,6 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (e) => {
-    console.log("~ e", e);
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
@@ -68,7 +67,6 @@ const Contact = () => {
           className="basis-1/2 mt-10 md:mt-0"
         >
           <form
-            target="_blank"
             onSubmit={onSubmit}
             action="https://formsubmit.co/c5c6a986fff53f778ad18ed1071f71e6" 
             method="POST"
