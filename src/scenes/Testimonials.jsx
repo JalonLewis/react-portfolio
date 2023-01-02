@@ -16,17 +16,16 @@ const Testimonials = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
+        <p className="font-playfair font-semibold text-4xl mb-5 text-red underline underline-offset-[5px]">
           TESTIMONIALS
         </p>
-        <LineGradient width="w-[265px]" />
       </motion.div>
 
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
           className="mx-auto relative bg-blue max-w-[400px] h-[450px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
-            before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
+            before:absolute before:top-[-120px] before:-ml-[120px] before:left-1/2 before:content-person1"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -37,21 +36,21 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-left text-base">
+          <p className="text-left text-sm xs:text-base">
           Jalon is an engineer with a passion for building software, learning, and solving problems.
           He makes the whole process look so fun that it gravitates his colleagues around him to create 
           a very productive and collaborative environment in his team. He has a very strong work ethic,
           where he can work several hours non stop and still be ready to learn more new concepts right afterwards.
           He is a class-personified professional who I recommend to any development.
           </p>
-          <p className="text-right text-lg">
+          <p className="text-right text-base xs:text-lg">
             -Saurabh Dahal, Instructor
           </p>
         </motion.div>
 
         <motion.div
           className="mx-auto relative bg-red max-w-[400px] h-[450px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
-          before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person2"
+          before:absolute before:top-[-120px] before:-ml-[120px] before:left-1/2 before:content-person2"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -62,21 +61,21 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-left text-base">
+          <p className="text-left text-sm xs:text-base">
           Jalon is an engineer with a passion for building software, learning, and solving problems.
           He makes the whole process look so fun that it gravitates his colleagues around him to create 
           a very productive and collaborative environment in his team. He has a very strong work ethic,
           where he can work several hours non stop and still be ready to learn more new concepts right afterwards.
           He is a class-personified professional who I recommend to any development.
           </p>
-          <p className="text-right text-lg">
+          <p className="text-right text-base xs:text-lg">
             -Katya Sarmiento, Classmate
           </p>
         </motion.div>
 
         <motion.div
           className="mx-auto relative bg-yellow max-w-[400px] h-[450px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
-          before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person3"
+          before:absolute before:top-[-120px] before:-ml-[120px] before:left-1/2 before:content-person3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -87,14 +86,14 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl">“</p>
-          <p className="text-left text-base">
+          <p className="text-left text-sm xs:text-base">
           Jalon is an engineer with a passion for building software, learning, and solving problems.
           He makes the whole process look so fun that it gravitates his colleagues around him to create 
           a very productive and collaborative environment in his team. He has a very strong work ethic,
           where he can work several hours non stop and still be ready to learn more new concepts right afterwards.
           He is a class-personified professional who I recommend to any development.
           </p>
-          <p className="text-right text-lg">
+          <p className="text-right text-base xs:text-lg">
             -Riley Miller, Mentor
           </p>
         </motion.div>

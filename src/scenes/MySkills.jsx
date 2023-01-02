@@ -23,15 +23,17 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5">
+          <p className="font-playfair font-semibold text-4xl mb-5 underline underline-offset-[10px] decoration-yellow">
             MY <span className="text-yellow">SKILLS</span>
           </p>
-          <LineGradient width="w-[185px]" />
         </motion.div>
 
         <div className="mt-16 md:mt-0">
           {isAboveMediumScreens ? (
-            <div className="relative z-0 ml-20">
+            <div
+            className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
+            before:w-full before:h-full before:border-2 before:border-yellow before:z-[-1]"
+          >
               <img
                 alt="skills"
                 className="z-10"
@@ -45,10 +47,10 @@ const MySkills = () => {
       </div>
 
       {/* Skills */}
-      <div className="md:flex md:justify-between mt-5 gap-32">
+      <div className="md:flex md:justify-between">
 
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3 -mt-20 md:mt-0"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -60,18 +62,16 @@ const MySkills = () => {
         >
           <div className="relative h-16">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-center text-3xl mt-3">
+              <p className="font-playfair font-semibold text-center text-3xl md:text-4xl mt-3">
                 Frontend
               </p>
             </div>
           </div>
-          <p className="mt-5">
             <FrontendIcons />
-          </p>
         </motion.div>
 
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -83,18 +83,16 @@ const MySkills = () => {
         >
           <div className="relative h-16">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-center text-3xl mt-3">
+              <p className="font-playfair font-semibold text-center text-3xl md:text-4xl mt-3">
                 Backend
               </p>
             </div>
           </div>
-          <p className="mt-5">
             <BackendIcons />
-          </p>
         </motion.div>
 
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -106,12 +104,10 @@ const MySkills = () => {
         >
           <div className="relative h-16">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-center text-3xl mt-3">Tools</p>
+              <p className="font-playfair font-semibold text-center text-3xl md:text-4xl mt-3">Tools</p>
             </div>
           </div>
-          <p className="mt-5">
             <ToolsIcons />
-          </p>
         </motion.div>
       </div>
     </section>

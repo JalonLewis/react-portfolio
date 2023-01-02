@@ -53,12 +53,11 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <p className="font-playfair font-semibold text-4xl underline underline-offset-[10px] decoration-blue">
             MY <span className="text-blue">PRO</span>JECTS
           </p>
-          <div className="flex justify-center my-5">
+          <div className="flex justify-center my-3">
             {" "}
-            <LineGradient width="w-[240px]" />
           </div>
         </div>
       </motion.div>

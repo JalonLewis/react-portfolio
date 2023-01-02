@@ -2,17 +2,17 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Footer = () => {
   return (
-    <footer className="h-28 bg-red">
-      <div className="w-10/12 mx-auto mt-auto pt-5">
+    <footer className="h-32 bg-red pt-5 md:pt-10">
+      <div className="w-10/12 mx-auto">
+        <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center ">
-          <p className="font-playfair font-semibold text-2xl text-yellow mb-4">
-            JALON LEWIS
+          <p className="font-playfair font-semibold text-2xl text-yellow">
+            Jalon Lewis
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2022 LEWIS. All Rights Reserved.
+            ©2023 Lewis. All Rights Reserved.
           </p>
         </div>
-        <SocialMediaIcons />
       </div>
     </footer>
   );
