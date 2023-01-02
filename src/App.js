@@ -7,7 +7,7 @@ import Testimonials from "./scenes/Testimonials";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import { useEffect, useState } from "react";
-import LineGradient from "./components/LineGradient";
+import PageBreak from "./components/PageBreak";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
@@ -50,7 +50,7 @@ function App() {
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
-      <LineGradient />
+      <PageBreak />
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
@@ -60,7 +60,7 @@ function App() {
           <MySkills />
         </motion.div>
       </div>
-      <LineGradient />
+      <PageBreak />
       <div className="w-5/6 mx-auto">
         <motion.div
           margin="0 0 -200px 0"
@@ -70,7 +70,7 @@ function App() {
           <Projects />
         </motion.div>
       </div>
-      <LineGradient />
+      <PageBreak />
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"
@@ -80,7 +80,7 @@ function App() {
           <Testimonials />
         </motion.div>
       </div>
-      <LineGradient />
+      <PageBreak />
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div
           margin="0 0 -200px 0"

@@ -1,4 +1,4 @@
-import LineGradient from "../components/LineGradient";
+import PageBreak from "../components/PageBreak";
 import { motion } from "framer-motion";
 
 const container = {
@@ -22,8 +22,8 @@ const Project = ({ title, projectDescription, link }) => {
     <motion.div variants={projectVariant} className="relative">
       <a href={link} target="_blank" rel="noreferrer">
         <div className={overlayStyles}>
-          <p className="text-3xl font-playfair">{title}</p>
-          <p className="text-lg px-1 font-playfair mt-3">{projectDescription}</p>
+          <p className="text-xl xs:text-2xl md:text-3xl font-playfair">{title}</p>
+          <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">{projectDescription}</p>
         </div>
         <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
       </a>
@@ -53,8 +53,8 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl underline underline-offset-[10px] decoration-blue">
-            MY <span className="text-blue">PRO</span>JECTS
+          <p className="font-playfair font-semibold text-4xl underline underline-offset-[10px] decoration-green">
+            MY <span className="text-green">PRO</span>JECTS
           </p>
           <div className="flex justify-center my-3">
             {" "}
@@ -73,7 +73,7 @@ const Projects = () => {
         >
           {/* Row 1 */}
           <div
-            className="flex justify-center text-center items-center p-10 bg-blue
+            className="flex justify-center text-center items-center p-10 bg-green
             max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             Hover for more information
@@ -111,7 +111,7 @@ const Projects = () => {
           {/* <Project title="Project 6" />
           <Project title="Project 7" /> */}
           <div
-            className="flex justify-center text-center items-center p-10 bg-blue
+            className="flex justify-center text-center items-center p-10 bg-green
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >
             Click a project to go to its github repository

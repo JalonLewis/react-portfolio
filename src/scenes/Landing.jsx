@@ -61,7 +61,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-          Highly motivated and self-driven full-stack software engineer with foundational knowledge in front-end and back-end programming, gained through an intense software engineering bootcamp.{" "}
+          Full-stack software engineer with foundational knowledge in front-end and back-end programming.  Based in Chicago, Illinois
           </p>
         </motion.div>
 

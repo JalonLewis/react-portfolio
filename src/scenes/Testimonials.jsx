@@ -1,4 +1,4 @@
-import LineGradient from "../components/LineGradient";
+import PageBreak from "../components/PageBreak";
 import { motion } from "framer-motion";
 
 const Testimonials = () => {
@@ -24,7 +24,7 @@ const Testimonials = () => {
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className="mx-auto relative bg-blue max-w-[400px] h-[450px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
+          className="mx-auto relative bg-green max-w-[400px] h-[450px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
             before:absolute before:top-[-120px] before:-ml-[120px] before:left-1/2 before:content-person1"
           initial="hidden"
           whileInView="visible"

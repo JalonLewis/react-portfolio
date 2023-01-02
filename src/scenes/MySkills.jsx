@@ -1,4 +1,4 @@
-import LineGradient from "../components/LineGradient";
+import PageBreak from "../components/PageBreak";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import FrontendIcons from "../components/FrontendIcons";
@@ -71,7 +71,7 @@ const MySkills = () => {
         </motion.div>
 
         <motion.div
-          className="md:w-1/3"
+          className="md:w-1/3 mt-10 md:mt-0"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -92,7 +92,7 @@ const MySkills = () => {
         </motion.div>
 
         <motion.div
-          className="md:w-1/3"
+          className="md:w-1/3 mt-10 md:mt-0"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
