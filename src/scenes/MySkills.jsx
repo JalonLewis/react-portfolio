@@ -62,7 +62,7 @@ const MySkills = () => {
         >
           <div className="relative h-16">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-center text-3xl md:text-4xl mt-3">
+              <p className="font-playfair font-semibold text-center text-3xl md:text-4xl mt-3 underline underline-offset-[10px]">
                 Frontend
               </p>
             </div>
@@ -83,7 +83,7 @@ const MySkills = () => {
         >
           <div className="relative h-16">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-center text-3xl md:text-4xl mt-3">
+              <p className="font-playfair font-semibold text-center text-3xl md:text-4xl mt-3 underline underline-offset-[10px]">
                 Backend
               </p>
             </div>
@@ -104,7 +104,7 @@ const MySkills = () => {
         >
           <div className="relative h-16">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-center text-3xl md:text-4xl mt-3">Tools</p>
+              <p className="font-playfair font-semibold text-center text-3xl md:text-4xl mt-3 underline underline-offset-[10px]">Tools</p>
             </div>
           </div>
             <ToolsIcons />

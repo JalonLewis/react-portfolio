@@ -24,7 +24,7 @@ const Testimonials = () => {
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className="mx-auto relative bg-green max-w-[400px] h-[550px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
+          className="mx-auto relative bg-red max-w-[400px] h-[550px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
             before:absolute before:top-[-120px] before:-ml-[120px] before:left-1/2 before:content-person1"
           initial="hidden"
           whileInView="visible"
@@ -51,7 +51,7 @@ const Testimonials = () => {
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-red max-w-[400px] h-[550px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
+          className="mx-auto relative bg-green max-w-[400px] h-[550px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
           before:absolute before:top-[-120px] before:-ml-[120px] before:left-1/2 before:content-person2"
           initial="hidden"
           whileInView="visible"
