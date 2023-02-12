@@ -1,4 +1,3 @@
-import PageBreak from "../components/PageBreak";
 import { motion } from "framer-motion";
 
 const container = {
@@ -13,33 +12,16 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, projectDescription, link }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-      bg-grey z-30 flex flex-col justify-center items-center text-center p-5 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
-
-  return (
-    <motion.div variants={projectVariant} className="relative">
-      <a href={link} target="_blank" rel="noreferrer">
-        <div className={overlayStyles}>
-          <p className="text-xl xs:text-2xl md:text-3xl font-playfair">{title}</p>
-          <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">{projectDescription}</p>
-        </div>
-        <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
-      </a>
-    </motion.div>
-  );
+const infoVariant = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { opacity: 1, scale: 1 },
 };
 
-<a
-  href="https://www.linkedin.com/in/jalon-lewis/"
-  target="_blank"
-  rel="noreferrer"
-></a>;
+const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-5 text-deep-blue`;
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-32 pb-48">
+    <section id="projects" className="pt-32 pb-16">
       {/* Headings */}
       <motion.div
         className="md:w-2/5 mx-auto text-center"
@@ -53,69 +35,119 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl underline underline-offset-[10px] decoration-green">
-            MY <span className="text-green">PRO</span>JECTS
+          <p className="font-playfair font-semibold text-5xl underline underline-offset-[15px] decoration-red mb-10">
+            MY <span className="text-red">PRO</span>JECTS
           </p>
-          <div className="flex justify-center my-3">
-            {" "}
-          </div>
         </div>
       </motion.div>
 
       {/* Projects */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3 mt-3"
+          className="sm:grid sm:grid-cols-3"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* Row 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-green
-            max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+          <motion.div
+            variants={infoVariant}
+            className="relative flex justify-center text-center items-center bg-red p-10
+            max-w-[360px] max-h-[360px] text-2xl font-playfair font-semibold rounded-tl"
           >
             Hover for more information
-          </div>
-          <Project
-            title="Local library"
-            projectDescription="There are three datasets that are a part of this project: accounts, authors, and books.
-            Functions written to return various statistics and other useful information.
-            Higher order functions were utilized including find(), filter(), map(), some(), every(), reduce(), and sort()."
-            link="https://github.com/JalonLewis/Local-library"
-          />
-          <Project
-            title="Decoder ring"
-            projectDescription="Functions written for an application that will either encode or decode a string using a variety of ciphers.
-          A series of tests were written for each cipher using Mocha and Chai to confirm that the cipher works as intended.
-          There are three ciphers including Caesar shift, Polybius square, and a substitution cipher."
-            link="https://github.com/JalonLewis/decoder-ring"
-          />
+          </motion.div>
+
+          <motion.div variants={projectVariant} className="relative">
+            <a
+              href="https://www.mernbook.jalonlewis.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={overlayStyles}>
+                <p className="text-xl xs:text-2xl md:text-3xl font-playfair">
+                  MERNbook
+                </p>
+                <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
+                  A social media application created with the MERN stack that allows users to create posts and follow other users
+                </p>
+              </div>
+              <img src={`../assets/mernbook.png`} alt="MERNbook" />
+            </a>
+          </motion.div>
+
+          <motion.div variants={projectVariant} className="relative">
+            <a
+              href="https://welovemovies-om53.onrender.com/movies"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={`${overlayStyles} rounded-tr`}>
+                <p className="text-xl xs:text-2xl md:text-3xl font-playfair">
+                  RTS redesign
+                </p>
+                <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
+                  A React mockup webpage selling powerlifting coaching services from Reactive Training Systems
+                </p>
+              </div>
+              <img
+                className="rounded-tr"
+                src={`../assets/RTS.png`}
+                alt="RTS redesign"
+              />
+            </a>
+          </motion.div>
 
           {/* Row 2 */}
-          <Project
-            title="Flashcard-O-Matic"
-            projectDescription="A flashcard app created using React that allows users to create, view, study, edit, and delete decks of flashcards."
-            link="https://github.com/JalonLewis/FLASHCARD-O-MATIC"
-          />
-          <Project
-            title="We Love Movies"
-            projectDescription="Created a database and built out specific routes so that users can gain access to data about movies, theaters, and reviews.
-          Node.js, Express, PostgreSQL, and Knex.js were utilized."
-            link="https://github.com/JalonLewis/WeLoveMovies"
-          />
-          {/* <Project title="Project 5" /> */}
+          <motion.div variants={projectVariant} className="relative">
+            <a
+              href="https://welovemovies-om53.onrender.com/movies"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={`${overlayStyles} rounded-bl`}>
+                <p className="text-xl xs:text-2xl md:text-3xl font-playfair">
+                  Flashcard-O-Matic
+                </p>
+                <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
+                  A flashcard app created using React that allows users to
+                  create, view, study, edit, and delete decks of flashcards.
+                </p>
+              </div>
+              <img
+                className="rounded-bl"
+                src={`../assets/flashcard-o-matic.jpeg`}
+                alt="Flashcard-O-Matic"
+              />
+            </a>
+          </motion.div>
 
-          {/* Row 3 */}
-          {/* <Project title="Project 6" />
-          <Project title="Project 7" /> */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-green
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+          <motion.div variants={projectVariant} className="relative">
+            <a
+              href="https://welovemovies-om53.onrender.com/movies"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={overlayStyles}>
+                <p className="text-xl xs:text-2xl md:text-3xl font-playfair">
+                  We Love Movies
+                </p>
+                <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
+                  A Restful API created for a movie theater.
+                </p>
+              </div>
+              <img src={`../assets/weLoveMovies.png`} alt="We Love Movies" />
+            </a>
+          </motion.div>
+
+          <motion.div
+            variants={infoVariant}
+            className="relative flex justify-center text-center items-center p-10 bg-red
+            max-w-[360px] max-h-[360px] text-2xl font-playfair font-semibold rounded-br"
           >
-            Click a project to go to its GitHub repository
-          </div>
+            Click on a project to go to its deployment
+          </motion.div>
         </motion.div>
       </div>
     </section>

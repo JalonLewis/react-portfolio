@@ -2,6 +2,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import logo from "../assets/logo.png";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -9,30 +10,33 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10"
+      className="md:flex md:justify-between md:items-center md:h-full gap-16 pt-16 sm:pt-32 pb-16"
     >
       {/* Image Section */}
-      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
+      <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16">
         {isAboveMediumScreens ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20
                 before:rounded-t-[400px] before:w-full before:max-w[400px] before:h-full
-                before:border-2 before:border-red before:z-[-1]"
+                before:border-2 before:border-red before:z-[-1] before:rounded-b"
           >
             <img
               alt="profile"
               className="hover:filter hover:saturate-150 transition duration-500 
-                z-10 w-full max-w-[400px] md:max-w-[600px]"
+                z-10 w-full max-w-[400px] md:max-w-[600px] rounded-b"
               src="assets/profile-image.png"
             />
           </div>
         ) : (
+          <div className="flex flex-col items-center">
+          <img className="h-1/5" alt="logo" src={logo} />
           <img
             alt="profile"
             className="hover:filter hover:saturate-150 transition duration-500
                 z-10 w-full max-w-[400px] md:max-w-[600px]"
             src="assets/profile-image.png"
           />
+          </div>
         )}
       </div>
 
@@ -49,19 +53,11 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Jalon {""}
-            <span
-              className="xs:relative xs:text-deep-blue xs:font-semibold z-20
-                    xs:before:content-brush before:absolute
-                    before:-left-[25px] before:-top-[80px] before:z-[-1]"
-            >
-              Lewis
-            </span>
-          </p>
-
+          {isAboveMediumScreens ? (<img alt="logo" src={logo} />):(<></>)}
+          
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-          Full-stack software engineer with foundational knowledge in front-end and back-end programming.  Based in Chicago, Illinois.
+            Full-stack software engineer with foundational knowledge in
+            front-end and back-end programming. Based in Chicago, Illinois.
           </p>
         </motion.div>
 

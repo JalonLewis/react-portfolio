@@ -5,9 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        green: "#377771",
         red: "#99253F",
-        yellow: "#F39237",
         grey: "#EDEDED",
         "deep-blue": "#010026",
         "dark-grey": "#757575",
@@ -18,7 +16,7 @@ module.exports = {
         opensans: ["Open Sans", "sans-serif"],
       },
       content: {
-        brush: "url('./assets/brush.png')",
+        brush: "url('./assets/logo.png')",
         person1: "url('./assets/person-1.png')",
         person2: "url('./assets/person-2.png')",
         person3: "url('./assets/person-3.png')",
@@ -28,6 +26,9 @@ module.exports = {
       xs: "480px",
       sm: "768px",
       md: "1060px",
+      lg: "992px",
+      xl: "1200px",
+      xxl: "1400px",
     },
   },
   plugins: [],

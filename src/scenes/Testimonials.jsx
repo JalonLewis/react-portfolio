@@ -1,4 +1,3 @@
-import PageBreak from "../components/PageBreak";
 import { motion } from "framer-motion";
 
 const Testimonials = () => {
@@ -16,7 +15,7 @@ const Testimonials = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red underline underline-offset-[5px]">
+        <p className="font-playfair font-semibold text-5xl mb-5 text-red underline underline-offset-[5px]">
           TESTIMONIALS
         </p>
       </motion.div>
@@ -24,7 +23,7 @@ const Testimonials = () => {
       {/* TESTIMONIALS */}
       <div className="md:flex md:justify-between gap-8">
         <motion.div
-          className="mx-auto relative bg-red max-w-[400px] h-[550px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
+          className="mx-auto relative bg-white/50 text-deep-blue rounded max-w-[300px] h-[500px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
             before:absolute before:top-[-120px] before:-ml-[120px] before:left-1/2 before:content-person1"
           initial="hidden"
           whileInView="visible"
@@ -36,7 +35,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl -mb-5">“</p>
-          <p className="text-left text-base xs:text-lg">
+          <p className="font-playfair text-left text-[14px]">
             Jalon is an engineer with a passion for building software, learning,
             and solving problems. He makes the whole process look so fun that it
             gravitates his colleagues around him to create a very productive and
@@ -45,13 +44,13 @@ const Testimonials = () => {
             to learn more new concepts right afterwards. He is a
             class-personified professional who I recommend to any development.
           </p>
-          <p className="text-right text-base xs:text-lg">
+          <p className="font-playfair text-right font-bold text-[14px]">
             -Saurabh Dahal, Instructor
           </p>
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-green max-w-[400px] h-[550px] flex flex-col justify-end px-5 pt-30 pb-5 mt-48
+          className="mx-auto relative bg-white/50 text-deep-blue rounded max-w-[300px] h-[500px] flex flex-col justify-end px-5 pt-12 pb-5 mt-48
           before:absolute before:top-[-120px] before:-ml-[120px] before:left-1/2 before:content-person2"
           initial="hidden"
           whileInView="visible"
@@ -63,7 +62,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl  -mb-5">“</p>
-          <p className="text-left text-sm xs:text-base">
+          <p className="font-playfair text-left text-sm md:text-[14px] font-medium">
             Jalon is a very hard-working person who can tackle any development
             challenge with ease. We've studied together and worked on multiple
             team projects, and I was always intrigued by the way he thinks
@@ -75,13 +74,13 @@ const Testimonials = () => {
             to work with! I highly recommend him to anyone looking for an
             A-player.
           </p>
-          <p className="text-right text-base xs:text-lg">
+          <p className="font-playfair text-right font-bold text-[14px]">
             -Katya Sarmiento, Classmate
           </p>
         </motion.div>
 
         <motion.div
-          className="mx-auto relative bg-yellow max-w-[400px] h-[550px] flex flex-col justify-end px-5 pb-5 mt-48
+          className="mx-auto relative bg-white/50 text-deep-blue rounded max-w-[300px] h-[500px] flex flex-col justify-end px-5 pb-5 mt-48
           before:absolute before:top-[-120px] before:-ml-[120px] before:left-1/2 before:content-person3"
           initial="hidden"
           whileInView="visible"
@@ -93,7 +92,7 @@ const Testimonials = () => {
           }}
         >
           <p className="font-playfair text-6xl -mb-5">“</p>
-          <p className="text-left text-sm xs:text-base">
+          <p className="font-playfair text-[14px] text-left text-sm">
             Jalon is an engineer with a passion for building software, learning,
             and solving problems. He makes the whole process look so fun that it
             gravitates his colleagues around him to create a very productive and
@@ -102,7 +101,7 @@ const Testimonials = () => {
             to learn more new concepts right afterwards. He is a
             class-personified professional who I recommend to any development.
           </p>
-          <p className="text-right text-base xs:text-lg">
+          <p className="font-playfair text-right font-bold text-[14px]">
             -Riley Miller, Mentor
           </p>
         </motion.div>

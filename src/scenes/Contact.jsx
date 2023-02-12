@@ -1,4 +1,3 @@
-import PageBreak from "../components/PageBreak";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 
@@ -17,7 +16,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact pt-32 pb-16">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -31,11 +30,10 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl underline underline-offset-[5px] decoration-yellow">
-            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
+          <p className="font-playfair font-semibold text-5xl underline underline-offset-[5px] decoration-red">
+            <span className="text-red">CONTACT ME</span> TO GET STARTED
           </p>
-          <div className="flex md:justify-end my-5">
-          </div>
+          <div className="flex md:justify-end my-5"></div>
         </div>
       </motion.div>
 
@@ -52,7 +50,11 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          <img
+            className="rounded"
+            src="../assets/contact-image.jpeg"
+            alt="contact"
+          />
         </motion.div>
 
         <motion.div
@@ -68,11 +70,11 @@ const Contact = () => {
         >
           <form
             onSubmit={onSubmit}
-            action="https://formsubmit.co/c5c6a986fff53f778ad18ed1071f71e6" 
+            action="https://formsubmit.co/c5c6a986fff53f778ad18ed1071f71e6"
             method="POST"
           >
             <input
-              className="w-full bg-green font-semibold placeholder-opaque-black p-3"
+              className="w-full font-semibold placeholder-opaque-black p-3 rounded"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -88,7 +90,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-green font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full font-semibold placeholder-opaque-black p-3 mt-5 rounded"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -104,7 +106,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-green font-semibold placeholder-opaque-black p-3 mt-5"
+              className="w-full font-semibold placeholder-opaque-black p-3 mt-5 rounded"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -124,7 +126,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-red font-semibold text-white mt-5 hover:bg-red hover:text-deep-blue transition duration-500 rounded"
               type="submit"
             >
               SEND ME A MESSAGE

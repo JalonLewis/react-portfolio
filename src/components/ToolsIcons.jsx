@@ -1,7 +1,6 @@
 const FrontendIcons = () => {
   return (
-    <div>
-      <div className="flex justify-center gap-1">
+      <div className="flex flex-wrap justify-center md:justify-end gap-1">
         <a
           className="hover:opacity-50 transition duration-500"
           href="https://code.visualstudio.com/docs"
@@ -9,6 +8,7 @@ const FrontendIcons = () => {
           rel="noreferrer"
         >
           <img
+            className="h-10 rounded"
             src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?logo=visualstudiocode&logoColor=fff&style=for-the-badge"
             alt="Visual Studio Code Badge"
           />
@@ -20,6 +20,7 @@ const FrontendIcons = () => {
           rel="noreferrer"
         >
           <img
+            className="h-10 rounded"
             src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff&style=for-the-badge"
             alt="Git Badge"
           />
@@ -31,12 +32,11 @@ const FrontendIcons = () => {
           rel="noreferrer"
         >
           <img
+            className="h-10 rounded"
             src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=for-the-badge"
             alt="GitHub Badge"
           />
         </a>
-      </div>
-      <div className="flex justify-center gap-1 mt-1">
         <a
           className="hover:opacity-50 transition duration-500"
           href="https://mochajs.org/api/mocha"
@@ -44,6 +44,7 @@ const FrontendIcons = () => {
           rel="noreferrer"
         >
           <img
+            className="h-10 rounded"
             src="https://img.shields.io/badge/Mocha-8D6748?logo=mocha&logoColor=fff&style=for-the-badge"
             alt="Mocha Badge"
           />
@@ -55,6 +56,7 @@ const FrontendIcons = () => {
           rel="noreferrer"
         >
           <img
+            className="h-10 rounded"
             src="https://img.shields.io/badge/Chai-A30701?logo=chai&logoColor=fff&style=for-the-badge"
             alt="Chai Badge"
           />
@@ -66,12 +68,11 @@ const FrontendIcons = () => {
           rel="noreferrer"
         >
           <img
+            className="h-10 rounded"
             src="https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=fff&style=for-the-badge"
             alt="Jest Badge"
           />
         </a>
-      </div>
-      <div className="flex justify-center gap-1 mt-1">
         <a
           className="hover:opacity-50 transition duration-500"
           href="https://docs.npmjs.com/"
@@ -79,6 +80,7 @@ const FrontendIcons = () => {
           rel="noreferrer"
         >
           <img
+            className="h-10 rounded"
             src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=for-the-badge"
             alt="npm Badge"
           />
@@ -90,6 +92,7 @@ const FrontendIcons = () => {
           rel="noreferrer"
         >
           <img
+            className="h-10 rounded"
             src="https://img.shields.io/badge/Yarn-2C8EBB?logo=yarn&logoColor=fff&style=for-the-badge"
             alt="Yarn Badge"
           />
@@ -101,11 +104,11 @@ const FrontendIcons = () => {
           rel="noreferrer"
         >
           <img
+            className="h-10 rounded"
             src="https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=fff&style=for-the-badge"
             alt="Vercel Badge"
           />
         </a>
-      </div>
     </div>
   );
 };
