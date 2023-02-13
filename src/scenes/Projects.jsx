@@ -139,7 +139,7 @@ const Projects = () => {
                   A Restful API created for a movie theater.
                 </p>
               </div>
-              <img src={`../assets/weLoveMovies.png`} alt="We Love Movies" />
+              <img src={`../assets/we-love-movies.png`} alt="We Love Movies" />
             </a>
           </motion.div>
 
