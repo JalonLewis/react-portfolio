@@ -70,7 +70,8 @@ const Projects = () => {
                   MERNbook
                 </p>
                 <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
-                  A social media application created with the MERN stack that allows users to create posts and follow other users
+                  A social media application created with the MERN stack that
+                  allows users to create posts and follow other users
                 </p>
               </div>
               <img src={`../assets/mernbook.png`} alt="MERNbook" />
@@ -79,7 +80,7 @@ const Projects = () => {
 
           <motion.div variants={projectVariant} className="relative">
             <a
-              href="https://welovemovies-om53.onrender.com/movies"
+              href="https://rts.jalonlewis.com/"
               target="_blank"
               rel="noreferrer"
             >
@@ -88,12 +89,13 @@ const Projects = () => {
                   RTS redesign
                 </p>
                 <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
-                  A React mockup webpage selling powerlifting coaching services from Reactive Training Systems
+                  A React mockup webpage selling powerlifting coaching services
+                  from Reactive Training Systems
                 </p>
               </div>
               <img
                 className="rounded-tr"
-                src={`../assets/RTS.png`}
+                src={`../assets/rts.png`}
                 alt="RTS redesign"
               />
             </a>
@@ -102,7 +104,7 @@ const Projects = () => {
           {/* Row 2 */}
           <motion.div variants={projectVariant} className="relative">
             <a
-              href="https://welovemovies-om53.onrender.com/movies"
+              href="https://www.flashcard-o-matic.jalonlewis.com/"
               target="_blank"
               rel="noreferrer"
             >
@@ -125,7 +127,7 @@ const Projects = () => {
 
           <motion.div variants={projectVariant} className="relative">
             <a
-              href="https://welovemovies-om53.onrender.com/movies"
+              href="https://www.welovemovies-server.jalonlewis.com/movies"
               target="_blank"
               rel="noreferrer"
             >
