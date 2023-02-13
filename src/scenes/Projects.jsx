@@ -69,9 +69,8 @@ const Projects = () => {
                 <p className="text-xl xs:text-2xl md:text-3xl font-playfair">
                   MERNbook
                 </p>
-                <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
-                  A social media application created with the MERN stack that
-                  allows users to create posts and follow other users
+                <p className="text-sm xxs:text-base sm:text-sm md:text-base md:mt-2 font-playfair whitespace-pre-line">
+                  A social media application that allows users to create posts and follow other users.{"\n"}Created with the MERN stack
                 </p>
               </div>
               <img src={`../assets/mernbook.png`} alt="MERNbook" />
@@ -88,9 +87,8 @@ const Projects = () => {
                 <p className="text-xl xs:text-2xl md:text-3xl font-playfair">
                   RTS redesign
                 </p>
-                <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
-                  A React mockup webpage selling powerlifting coaching services
-                  from Reactive Training Systems
+                <p className="text-sm xxs:text-base sm:text-sm md:text-base md:mt-2 font-playfair whitespace-pre-line">
+                  A mockup webpage marketing powerlifting coaching from Reactive Training Systems.{"\n"}Created with React and TailwindCSS
                 </p>
               </div>
               <img
@@ -112,9 +110,8 @@ const Projects = () => {
                 <p className="text-xl xs:text-2xl md:text-3xl font-playfair">
                   Flashcard-O-Matic
                 </p>
-                <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
-                  A flashcard app created using React that allows users to
-                  create, view, study, edit, and delete decks of flashcards.
+                <p className="text-sm xxs:text-base sm:text-sm md:text-base md:mt-2 font-playfair whitespace-pre-line">
+                  A flashcard app that allows users to create, view, study, edit, and delete decks of flashcards.{"\n"}Created with React and Bootstrap
                 </p>
               </div>
               <img
@@ -135,8 +132,9 @@ const Projects = () => {
                 <p className="text-xl xs:text-2xl md:text-3xl font-playfair">
                   We Love Movies
                 </p>
-                <p className="text-sm xs:text-base md:text-lg px-1 font-playfair mt-2">
-                  A Restful API created for a movie theater.
+                <p className="text-sm xxs:text-base sm:text-sm md:text-base md:mt-2 font-playfair whitespace-pre-line">
+                  A Restful API created for a movie theater using a PostgreSQL database.{"\n"}Valid read endpoints:{"\n"}
+                   /movies /theaters{"\n"}/movies?is_showing=true{"\n"}/movies/:movieId{"\n"}/movies/:movieId/theaters{"\n"}/movies/:movieId/reviews 
                 </p>
               </div>
               <img src={`../assets/we-love-movies.png`} alt="We Love Movies" />
