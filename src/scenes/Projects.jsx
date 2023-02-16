@@ -44,19 +44,18 @@ const Projects = () => {
       {/* Projects */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid sm:grid-cols-2"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {/* Row 1 */}
           <motion.div
             variants={infoVariant}
-            className="relative flex justify-center text-center items-center bg-red p-10
+            className="relative flex flex-col justify-center text-center items-center bg-red p-10
             max-w-[360px] max-h-[360px] text-2xl font-playfair font-semibold rounded-tl"
           >
-            Hover for more information
+            <p>Click for deployment or hover for more information</p>
           </motion.div>
 
           <motion.div variants={projectVariant} className="relative">
@@ -99,29 +98,6 @@ const Projects = () => {
             </a>
           </motion.div>
 
-          {/* Row 2 */}
-          <motion.div variants={projectVariant} className="relative">
-            <a
-              href="https://www.flashcard-o-matic.jalonlewis.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className={`${overlayStyles} rounded-bl`}>
-                <p className="text-xl xs:text-2xl md:text-3xl font-playfair">
-                  Flashcard-O-Matic
-                </p>
-                <p className="text-sm xxs:text-base sm:text-sm md:text-base md:mt-2 font-playfair whitespace-pre-line">
-                  A flashcard app that allows users to create, view, study, edit, and delete decks of flashcards.{"\n"}Created with React and Bootstrap
-                </p>
-              </div>
-              <img
-                className="rounded-bl"
-                src={`../assets/flashcard-o-matic.jpeg`}
-                alt="Flashcard-O-Matic"
-              />
-            </a>
-          </motion.div>
-
           <motion.div variants={projectVariant} className="relative">
             <a
               href="https://www.welovemovies-server.jalonlewis.com/movies"
@@ -141,13 +117,13 @@ const Projects = () => {
             </a>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             variants={infoVariant}
             className="relative flex justify-center text-center items-center p-10 bg-red
             max-w-[360px] max-h-[360px] text-2xl font-playfair font-semibold rounded-br"
           >
             Click on a project to go to its deployment
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
